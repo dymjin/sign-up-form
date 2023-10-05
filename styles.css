@@ -1,3 +1,49 @@
-h1 {
-    font-size: 10rem;
+html,
+body,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: grey;
+}
+
+body {
+    display: flex;
+
+}
+
+.logo-container {
+    width: 550px;
+    height: auto;
+    position: relative;
+}
+
+
+
+.logo-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 250px;
+    width: 550px;
+    padding: 10px 0;
+    background-color: rgba(4, 4, 29, 0.555);
+    color: white;
+}
+
+.logo-text {
+    font-size: 6rem;
+}
+
+#odin-logo {
+    width: 80px;
+    height: auto;
+}
+
+#trees-in-forest {
+    width: 550px;
+    height: auto;
 }
