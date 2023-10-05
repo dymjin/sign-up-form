@@ -12,7 +12,6 @@ html {
 
 body {
     display: flex;
-
 }
 
 .logo-container {
@@ -36,6 +35,36 @@ body {
 
 .logo-text {
     font-size: 6rem;
+}
+
+.header-text {
+    width: 650px;
+    font-size: 1.5rem;
+}
+
+.body-container {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+}
+
+li:nth-child(2n) {
+    flex-basis: 70%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.credit {
+    position: absolute;
+    bottom: 50px;
+
 }
 
 #odin-logo {
