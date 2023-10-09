@@ -109,6 +109,12 @@ input.error {
     font-size: 0.9rem;
 }
 
+:invalid {
+    appearance: none;
+    outline: none;
+    border-color: rgb(214, 42, 42);
+}
+
 .matching {
     appearance: none;
     outline: none;
