@@ -7,7 +7,7 @@ body,
 }
 
 html {
-    background-color: grey;
+    background-color: rgb(247, 247, 247);
 }
 
 body {
@@ -16,20 +16,18 @@ body {
 
 .logo-container {
     width: 550px;
-    height: auto;
+    height: 900px;
     position: relative;
 }
-
-
 
 .logo-wrapper {
     position: absolute;
     display: flex;
     justify-content: center;
-    top: 250px;
-    width: 550px;
+    top: 210px;
+    width: 500px;
     padding: 10px 0;
-    background-color: rgba(4, 4, 29, 0.555);
+    background-color: rgba(0, 0, 0, 0.342);
     color: white;
 }
 
@@ -37,34 +35,103 @@ body {
     font-size: 6rem;
 }
 
+.logo-bg-container {
+    background: no-repeat center/150% url("assets/imgs/tree-from-bottom.jpg");
+    width: 500px;
+    height: 900px;
+}
+
 .header-text {
     width: 650px;
     font-size: 1.5rem;
+    margin-bottom: 3.5rem;
 }
 
-.body-container {
+.main {
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 2.5rem;
+    justify-content: center;
+    height: 900px;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
     display: flex;
     flex-flow: column wrap;
 }
 
-ul {
-    display: flex;
-    flex-flow: row wrap;
-    list-style: none;
+ul>li>input {
+    appearance: none;
+    padding: 0.4rem 0.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 250px;
 }
 
-li:nth-child(2n) {
-    flex-basis: 70%;
+ul>li:nth-child(1n+2) {
+    margin-top: 25px;
+}
+
+.form-wrapper {
+    background-color: rgb(255, 255, 255);
+    margin-left: -2.5rem;
+    box-shadow: 0px 5px 9px 0px #bdbdbd;
+    padding: 2.2rem 0;
+    display: block;
+}
+
+form {
+    margin-left: 2.5rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+button[type="submit"] {
+    appearance: none;
+    width: 260px;
+    border: none;
+    border-radius: 8px;
+    padding: 0.9rem 1rem;
+    background-color: rgb(101, 155, 76);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.login {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.login>a {
+    color: rgb(66, 121, 66);
+}
+
+label {
+    display: block;
+    width: 300px;
+    font-size: 0.8rem;
 }
 
 a {
     text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
 .credit {
     position: absolute;
-    bottom: 50px;
+    text-align: center;
+    bottom: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.295);
+    width: 450px;
+}
 
+.credit>a {
+    text-decoration: underline;
 }
 
 #odin-logo {
@@ -72,7 +139,7 @@ a {
     height: auto;
 }
 
-#trees-in-forest {
-    width: 550px;
-    height: auto;
+#logo-bg {
+    width: 100%;
+    height: 100%;
 }
