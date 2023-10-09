@@ -4,6 +4,7 @@ body,
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -24,15 +25,23 @@ body {
     position: absolute;
     display: flex;
     justify-content: center;
-    top: 210px;
+    align-items: center;
+    top: 250px;
     width: 500px;
     padding: 10px 0;
     background-color: rgba(0, 0, 0, 0.342);
     color: white;
+    height: 100px;
 }
 
 .logo-text {
-    font-size: 6rem;
+    font-size: 4rem;
+    font-family: 'Moul', cursive;
+}
+
+#tree-logo {
+    width: 90px;
+    height: auto;
 }
 
 .logo-bg-container {
@@ -54,24 +63,50 @@ body {
     justify-content: center;
     height: 900px;
     width: 100%;
+    font-weight: 600;
 }
 
 ul {
     list-style: none;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
+    column-gap: 90px;
+    row-gap: 25px;
+
 }
 
-ul>li>input {
+ul>li:nth-child(2n) {
+    width: 650px;
+}
+
+input {
     appearance: none;
     padding: 0.4rem 0.5rem;
     border-radius: 4px;
     font-size: 1rem;
-    width: 250px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(236, 236, 236);
 }
 
-ul>li:nth-child(1n+2) {
-    margin-top: 25px;
+input:focus,
+input:focus-visible {
+    appearance: none;
+    outline: none;
+    border-color: rgb(0, 102, 255);
+    box-shadow: 3px 3px 6px 0px rgb(177, 177, 177);
+}
+
+input.error {
+    appearance: none;
+    outline: none;
+    border-color: rgb(214, 42, 42);
+}
+
+.error::after {
+    content: "* Passwords do not match";
+    color: rgb(214, 42, 42);
+    font-size: 0.9rem;
 }
 
 .form-wrapper {
@@ -79,7 +114,6 @@ ul>li:nth-child(1n+2) {
     margin-left: -2.5rem;
     box-shadow: 0px 5px 9px 0px #bdbdbd;
     padding: 2.2rem 0;
-    display: block;
 }
 
 form {
@@ -104,6 +138,7 @@ button[type="submit"] {
 .login {
     font-size: 1.2rem;
     margin-top: 2rem;
+    font-weight: 400;
 }
 
 .login>a {
@@ -112,8 +147,8 @@ button[type="submit"] {
 
 label {
     display: block;
-    width: 300px;
     font-size: 0.8rem;
+    color: #3a3a3a;
 }
 
 a {
@@ -132,14 +167,4 @@ a {
 
 .credit>a {
     text-decoration: underline;
-}
-
-#odin-logo {
-    width: 80px;
-    height: auto;
-}
-
-#logo-bg {
-    width: 100%;
-    height: 100%;
 }
