@@ -109,6 +109,12 @@ input.error {
     font-size: 0.9rem;
 }
 
+.matching {
+    appearance: none;
+    outline: none;
+    border-color: rgb(101, 155, 76);
+}
+
 .form-wrapper {
     background-color: rgb(255, 255, 255);
     margin-left: -2.5rem;
