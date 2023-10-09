@@ -4,7 +4,6 @@ const divMessage = document.querySelector("div.error");
 
 passwordInput.addEventListener('input', () => {
     if (passwordInput.value === confirmPassword.value && passwordInput.value !== "") {
-        console.log('hello');
         passwordInput.classList.remove('error');
         passwordInput.classList.add('matching');
         confirmPassword.classList.remove('error');
@@ -19,7 +18,6 @@ passwordInput.addEventListener('input', () => {
 
 confirmPassword.addEventListener('input', () => {
     if (passwordInput.value === confirmPassword.value && passwordInput.value !== "") {
-        console.log('hello');
         passwordInput.classList.remove('error');
         passwordInput.classList.add('matching');
         confirmPassword.classList.remove('error');

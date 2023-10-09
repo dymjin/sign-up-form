@@ -34,18 +34,23 @@
                     <li>
                         <label for="fname">FIRST NAME</label>
                         <input type="text" name="fname" id="fname" required>
+                        <div></div>
                     </li>
                     <li>
                         <label for="lname">LAST NAME</label>
                         <input type="text" name="lname" id="lname" required>
+                        <div></div>
                     </li>
                     <li>
                         <label for="mail">EMAIL</label>
                         <input type="email" name="usermail" id="mail" required>
+                        <div></div>
                     </li>
                     <li>
                         <label for="num">PHONE NUMBER</label>
-                        <input type="tel" name="usernumber" id="num" required>
+                        <input type="tel" name="usernumber" id="num" required
+                            pattern="\d{10}|\d{3}[.\-\s]\d{3}[.\-\s]\d{4}" placeholder="xxx-xxx-xxxx">
+                        <div></div>
                     </li>
                     <li>
                         <label for="password">PASSWORD</label>
@@ -55,6 +60,7 @@
                     <li>
                         <label for="password-cnf">CONFIRM PASSWORD</label>
                         <input class="error" type="password" name="password_confirm" id="password-cnf" required>
+                        <div></div>
                     </li>
                 </ul>
         </div>
